@@ -1,8 +1,8 @@
 class Ncytm < Formula
   desc "YouTube Music client for the terminal"
   homepage "https://github.com/bogdan-calapod/ncytm"
-  url "https://github.com/bogdan-calapod/ncytm/archive/refs/tags/v1.0.10.tar.gz"
-  sha256 "1fa2442000e6b1e2678497c073e3b5e16346471adaf811d327951bad28747ab4"
+  url "https://github.com/bogdan-calapod/ncytm/archive/refs/tags/v1.0.11.tar.gz"
+  sha256 "97c3b87257cee3c9657d1bef9ca44baf977b044ad9aaa40b52c97c282f83206f"
   license "BSD-2-Clause"
 
   depends_on "rust" => :build
