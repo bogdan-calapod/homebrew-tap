@@ -1,28 +1,28 @@
 class PdqCli < Formula
   desc "CLI for PDQ Connect and PDQ Detect"
   homepage "https://github.com/bogdan-calapod/pdq-cli"
-  version "0.1.11"
+  version "0.1.12"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/bogdan-calapod/pdq-cli/releases/download/v0.1.11/pdq-macos-arm64"
-      sha256 "295b57e963d2d70911a6a31f4427ff985001394f17cd1e0997036919a603adc7"
+      url "https://github.com/bogdan-calapod/pdq-cli/releases/download/v0.1.12/pdq-macos-arm64"
+      sha256 "b80f88d50e3f7b66273d333776a30389d2b0654aaa95ac583a2ac9f86c5a3efa"
     end
     on_intel do
-      url "https://github.com/bogdan-calapod/pdq-cli/releases/download/v0.1.11/pdq-macos-x64"
-      sha256 "f9adb141a0eae9d05bc7ffef96ee3d1215aa384a4a7c4465a5a8dbf99174b4f8"
+      url "https://github.com/bogdan-calapod/pdq-cli/releases/download/v0.1.12/pdq-macos-x64"
+      sha256 "78fa3729019e12b7c897d6c9a6706f4f3b02f9e16bda8d28736533f14fb18fde"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bogdan-calapod/pdq-cli/releases/download/v0.1.11/pdq-linux-arm64"
-      sha256 "cbfa28f94d473581368678845302c9b64865d719740575963fe4b0a51054c9a9"
+      url "https://github.com/bogdan-calapod/pdq-cli/releases/download/v0.1.12/pdq-linux-arm64"
+      sha256 "f0dce857fbf4cddcd6ddc9009a45917044875f0e3ca02b449f90c14df202c3f2"
     end
     on_intel do
-      url "https://github.com/bogdan-calapod/pdq-cli/releases/download/v0.1.11/pdq-linux-x64"
-      sha256 "cc040f66484373b0e7a3be302489bfed5888c2f13a38bf4201ddd02301d5fdd8"
+      url "https://github.com/bogdan-calapod/pdq-cli/releases/download/v0.1.12/pdq-linux-x64"
+      sha256 "8425ea27ac90ef383d1086bb982ca447e315079f61cf9f711e1b6ed25b5d5f73"
     end
   end
 
