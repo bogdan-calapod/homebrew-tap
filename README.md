@@ -23,3 +23,11 @@ Or directly without tapping first:
 ```sh
 brew install bogdan-calapod/tap/pdq-cli
 ```
+
+### asryx
+
+Native voice-to-text toggle/CLI (offline, GGML Whisper).
+
+```sh
+brew install bogdan-calapod/tap/asryx
+```
