@@ -1,8 +1,8 @@
 class Asryx < Formula
   desc "Native voice-to-text toggle/CLI (offline, GGML Whisper)"
   homepage "https://github.com/bogdan-calapod/asryx-macos"
-  url "https://github.com/bogdan-calapod/asryx-macos/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "5781ad4a20866ea167e92b40fed00e3df4230fcd70f3733d6e172b1d54154ac3"
+  url "https://github.com/bogdan-calapod/asryx-macos/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "afe76e904db9591537802f1beb746147c13e59ebfa3dfcd1737c38f992b7f459"
   license "Apache-2.0"
   head "https://github.com/bogdan-calapod/asryx-macos.git", branch: "main"
 
@@ -32,10 +32,15 @@ class Asryx < Formula
       cp_r ".", libexec/"sherpa-onnx"
     end
 
+    # Sherpa-onnx vendors several deps via FetchContent (json,
+    # hclust_cpp, eigen, kaldi-decoder, ...). Homebrew traps these
+    # by default; opting in here is the documented mechanism rather
+    # than mirroring ~10 resources by hand.
     args = std_cmake_args + %W[
       -G Ninja
       -DCMAKE_BUILD_TYPE=Release
       -DCMAKE_OSX_DEPLOYMENT_TARGET=13.4
+      -DHOMEBREW_ALLOW_FETCHCONTENT=ON
       -DASRYX_WHISPER_SOURCE_DIR=#{libexec}/whisper.cpp
       -DASRYX_WHISPER_SOURCE_DIR_DEFAULT=#{libexec}/whisper.cpp
       -DASRYX_SHERPA_SOURCE_DIR=#{libexec}/sherpa-onnx
