@@ -1,8 +1,8 @@
 class Asryx < Formula
   desc "Native voice-to-text toggle/CLI (offline, GGML Whisper)"
   homepage "https://github.com/bogdan-calapod/asryx-macos"
-  url "https://github.com/bogdan-calapod/asryx-macos/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "b1421f4b03e39bfedd124a3113dfaff526a2755f60256a731b046d8277a07941"
+  url "https://github.com/bogdan-calapod/asryx-macos/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "6d8f456613e94f484a01df0ce812b26ec5e75bf75dc8912b7faadd1fc8562b6f"
   license "Apache-2.0"
   head "https://github.com/bogdan-calapod/asryx-macos.git", branch: "main"
 
@@ -37,7 +37,7 @@ class Asryx < Formula
   end
 
   def caveats
-    <<~EOS
+    <<~CAVEATS
       asryx stores user data under your home directory:
         ~/.local/share/asryx           downloaded GGML models
         ~/.cache/asryx                 cache
@@ -66,7 +66,7 @@ class Asryx < Formula
 
       Bind 'asryx' to a hotkey via Karabiner-Elements, Hammerspoon, Raycast,
       or skhd to toggle recording and transcription.
-    EOS
+    CAVEATS
   end
 
   test do
