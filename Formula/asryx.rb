@@ -1,8 +1,8 @@
 class Asryx < Formula
   desc "Native voice-to-text toggle/CLI (offline, GGML Whisper)"
   homepage "https://github.com/bogdan-calapod/asryx-macos"
-  url "https://github.com/bogdan-calapod/asryx-macos/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "afe76e904db9591537802f1beb746147c13e59ebfa3dfcd1737c38f992b7f459"
+  url "https://github.com/bogdan-calapod/asryx-macos/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "b4f83d25954f06e63449a21a77edd5241c2a2e51201bf5c303bd1c056b0bbfd6"
   license "Apache-2.0"
   head "https://github.com/bogdan-calapod/asryx-macos.git", branch: "main"
 
